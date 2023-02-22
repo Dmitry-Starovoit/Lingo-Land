@@ -1,0 +1,86 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  color: #fff;
+  /* Растягиваем body по высоте html */
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.header {
+  margin: 0px;
+  height: 100px;
+  grid-area: 1 / 1 / 2 / 7;
+  background-image: url("images/bg-header.png");
+}
+
+.header__content {
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 60px;
+}
+
+.nav {
+  font-family: "Hanken Grotesk", sans-serif;
+  display: flex;
+  list-style: none;
+  font-size: 20px;
+  padding-inline-start: 0px;
+}
+
+.nav li + li {
+  padding-left: 15px;
+}
+
+.nav__item a:after {
+  content: "";
+  display: block;
+  border-bottom: 3px solid #e1bf37;
+  width: 0;
+  left: 0;
+  -webkit-transition: width 1s ease-in-out;
+  transition: width 1s ease-in-out;
+  transition-delay: 0s;
+}
+
+.nav__item a:hover:after {
+  width: 100%;
+  border-bottom: 3px solid #e1bf37;
+}
+
+.nav__item a:hover {
+  color: rgb(204, 204, 204);
+}
+
+.nav__item a {
+  font: 400;
+  color: rgb(237, 237, 237);
+  text-decoration: none;
+}
+
+.nav .navbar {
+  grid-area: 2 / 2 / 5 / 3;
+  background-color: red;
+}
+.content {
+  grid-area: 2 / 3 / 5 / 6;
+  background-color: rgb(237, 237, 237);
+  height: 76vh;
+}
+.footer {
+  flex: 0 0 auto;
+  grid-area: 5 / 1 / 6 / 7;
+  background-image: url("images/bg-header.png");
+  height: 100px;
+  margin-bottom: 0px;
+}
