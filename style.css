@@ -1,5 +1,6 @@
 html {
   height: 100%;
+  font-family: "Hanken Grotesk", sans-serif;
 }
 
 body {
@@ -81,6 +82,161 @@ body {
   flex: 0 0 auto;
   grid-area: 5 / 1 / 6 / 7;
   background-image: url("images/bg-header.png");
-  height: 100px;
+  height: 230px;
   margin-bottom: 0px;
+}
+
+.logo__footer {
+  width: 150px;
+}
+
+.footer__content {
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 20px;
+  display: flex;
+  color: rgb(156, 156, 156);
+}
+
+.block__one {
+  width: 350px;
+  border-right: 1px solid rgb(116, 116, 116);
+}
+
+.text__footer {
+  color: rgb(156, 156, 156);
+  width: 200px;
+}
+
+.block__two {
+  width: 250px;
+  border-right: 1px solid rgb(116, 116, 116);
+}
+
+.footer__title {
+  margin-left: 40px;
+  letter-spacing: 1.5px;
+}
+
+.nav__footer {
+  list-style: none;
+  font-size: 15px;
+  color: rgb(156, 156, 156);
+}
+
+.nav__footer li + li {
+  padding-top: 5px;
+}
+
+.nav__footer--item a:after {
+  display: block;
+  width: 0;
+  left: 0;
+  -webkit-transition: width 1s ease-in-out;
+  transition: width 1s ease-in-out;
+  transition-delay: 0s;
+}
+
+.nav__footer--item a:hover:after {
+  width: 100%;
+}
+
+.nav__footer--item a:hover {
+  color: rgb(204, 204, 204);
+}
+
+.nav__footer--item a {
+  font: 400;
+  color: rgb(156, 156, 156);
+  text-decoration: none;
+}
+
+.block__three {
+  width: 250px;
+  border-right: 1px solid rgb(116, 116, 116);
+}
+
+.follow__list {
+  font: 400;
+  list-style: none;
+  font-size: 15px;
+  color: rgb(156, 156, 156);
+}
+
+.follow__list--item a {
+  font: 400;
+  color: rgb(156, 156, 156);
+  text-decoration: none;
+}
+
+.follow__list--item img {
+  height: 12px;
+  margin-right: 8px;
+}
+
+.follow__list li + li {
+  padding-top: 5px;
+}
+
+.follow__list--item a:after {
+  display: block;
+  width: 0;
+  left: 0;
+  -webkit-transition: width 1s ease-in-out;
+  transition: width 1s ease-in-out;
+  transition-delay: 0s;
+}
+
+.follow__list--item a:hover:after {
+  width: 100%;
+}
+
+.follow__list--item a:hover {
+  color: rgb(204, 204, 204);
+}
+
+.block__four {
+  position: relative;
+  width: 350px;
+}
+.email__send {
+  display: flex;
+}
+
+.email__title {
+  margin-left: 100px;
+}
+
+.input__footer {
+  color: rgb(156, 156, 156);
+  position: relative;
+  opacity: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid rgb(156, 156, 156);
+  width: 215px;
+  height: 30px;
+  margin-left: auto;
+  font-size: 15px;
+  outline: none;
+  caret-color: rgb(156, 156, 156);
+}
+
+.send__email {
+  position: relative;
+  opacity: 100%;
+  background: transparent;
+  height: 20px;
+  padding-bottom: 10px;
+  border: none;
+}
+
+.send__email img {
+  padding-top: 7px;
+  height: 15px;
+}
+
+.text__footer--newsletter {
+  width: 250px;
+  margin-left: auto;
 }
