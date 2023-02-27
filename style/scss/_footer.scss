@@ -1,0 +1,87 @@
+@import "_mixins";
+.footer {
+  background-image: url("../../images/bg-header.png");
+  height: 230px;
+  margin-bottom: 0px;
+  .logo__footer {
+    width: 150px;
+  }
+  .footer__content {
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 20px;
+    display: flex;
+    color: rgb(156, 156, 156);
+    .block__one {
+      @include footerBlock;
+      .text__footer {
+        color: rgb(156, 156, 156);
+        width: 200px;
+      }
+    }
+    .block__two {
+      @include footerBlock(250px);
+      .footer__title {
+        @include footerTitle;
+      }
+      .nav__footer {
+        @include footerListMenu;
+      }
+    }
+    .block__three {
+      @include footerBlock(250px);
+      .footer__title {
+        @include footerTitle;
+      }
+      .follow__list {
+        @include footerListMenu;
+        img {
+          height: 12px;
+          margin-right: 8px;
+        }
+      }
+    }
+    .block__four {
+      position: relative;
+      width: 350px;
+      .email__title {
+        margin-left: 100px;
+        letter-spacing: 1.5px;
+      }
+      .text__footer--newsletter {
+        width: 250px;
+        margin-left: auto;
+      }
+      .email__send {
+        display: flex;
+        .input__footer {
+          color: rgb(156, 156, 156);
+          position: relative;
+          opacity: 100%;
+          background: transparent;
+          border: none;
+          border-bottom: 2px solid rgb(156, 156, 156);
+          width: 215px;
+          height: 30px;
+          margin-left: auto;
+          font-size: 15px;
+          outline: none;
+          caret-color: rgb(156, 156, 156);
+        }
+      }
+      .send__email {
+        position: relative;
+        opacity: 100%;
+        background: transparent;
+        height: 20px;
+        padding-bottom: 10px;
+        border: none;
+        img {
+          padding-top: 7px;
+          height: 15px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

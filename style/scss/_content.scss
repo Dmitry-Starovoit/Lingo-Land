@@ -1,0 +1,49 @@
+.content {
+  background-color: rgb(237, 237, 237);
+  .content__header {
+    text-align: center;
+    color: rgb(99, 99, 99);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    .content__title {
+      font-size: 55px;
+      padding-top: 20px;
+    }
+    .content__title--text {
+      font-size: 25px;
+      margin: 0 auto;
+      width: 450px;
+      line-height: 40px;
+    }
+    .content__title--button {
+      margin-top: 40px;
+      width: 300px;
+      height: 100px;
+      background-color: #e1bf37;
+      border: 0px;
+      border-radius: 10px;
+      font-size: 20px;
+      color: rgb(72, 72, 72);
+      font-family: "Hanken Grotesk", sans-serif;
+      font-weight: 500;
+    }
+  }
+}
+
+.image {
+  @include contentImage(url("../../images/photo1.jpg"));
+}
+
+.content__block {
+  @include contentBlock;
+  .block__one--content {
+    @include flexContentBlock;
+    .block__one--title {
+      @include contentBlockTitle;
+    }
+    .block__one--text {
+      @include contentBlockText;
+    }
+  }
+}

@@ -1,0 +1,71 @@
+@mixin footerBlock($width: 350px) {
+  width: $width;
+  border-right: 1px solid rgb(116, 116, 116);
+}
+
+@mixin contentBlock {
+  padding-top: 50px;
+  background-color: rgb(237, 237, 237);
+}
+@mixin contentImage($url) {
+  height: 260px;
+  background-image: $url;
+  background-position: center center;
+  background-size: cover;
+  padding-top: 50px;
+}
+@mixin flexContentBlock {
+  display: flex;
+  color: rgb(99, 99, 99);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  border: none;
+}
+@mixin contentBlockTitle {
+  width: 327px;
+  height: 300px;
+  font-size: 25px;
+  padding-top: 100px;
+  padding-right: 50px;
+  text-align: center;
+  background-image: url("../../images/bg-block.svg");
+  background-repeat: no-repeat;
+  background-size: 300px;
+}
+@mixin contentBlockText {
+  line-height: 25px;
+  text-indent: 15px;
+}
+
+@mixin footerTitle {
+  margin-left: 40px;
+  letter-spacing: 1.5px;
+}
+
+@mixin footerListMenu {
+  list-style: none;
+  font-size: 15px;
+  color: rgb(156, 156, 156);
+  li {
+    a {
+      font-size: 400;
+      color: rgb(156, 156, 156);
+      text-decoration: none;
+      &:after {
+        display: block;
+        width: 0;
+        left: 0;
+        -webkit-transition: width 1s ease-in-out;
+        transition: width 1s ease-in-out;
+        transition-delay: 0s;
+      }
+      &:hover {
+        color: rgb(204, 204, 204);
+      }
+    }
+  }
+  li + li {
+    padding-top: 5px;
+  }
+}
