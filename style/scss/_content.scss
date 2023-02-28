@@ -1,9 +1,11 @@
 @import "_mixins";
 .content {
+  @include contentImage(url("../../images/photo1.jpg"));
   background-color: rgb(237, 237, 237);
+  @include contentImage(url("../../images/photo1.jpg"));
   .content__header {
     text-align: center;
-    color: rgb(99, 99, 99);
+    color: rgb(72, 72, 72);
     max-width: 1200px;
     margin: 0 auto;
 
@@ -27,23 +29,35 @@
       font-size: 20px;
       color: rgb(72, 72, 72);
       font-family: "Hanken Grotesk", sans-serif;
-      font-weight: 500;
+      font-weight: 600;
+      transition: transform 0.6s;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.06);
+        -webkit-box-shadow: 10px 10px 50px 1px rgba(0, 0, 0, 0.37);
+        -moz-box-shadow: 10px 10px 50px 1px rgba(0, 0, 0, 0.37);
+        box-shadow: 10px 10px 50px 1px rgba(0, 0, 0, 0.37);
+      }
     }
     .show__more--block {
       margin-top: 20px;
       height: 30px;
       padding-top: 10px;
+      background: none;
       .show__more {
         height: 30px;
         border: none;
         font-size: 18px;
         color: rgb(72, 72, 72);
         font-family: "Hanken Grotesk", sans-serif;
-        font-weight: 500;
+        font-weight: 600;
+        background: none;
         cursor: pointer;
+        transition: transform 0.6s;
         &:hover {
-          font-size: 19px;
+          font-size: 20px;
           color: rgb(154, 154, 154);
+          transform: scale(1.06);
         }
       }
     }

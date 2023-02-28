@@ -8,9 +8,9 @@
   background-color: rgb(237, 237, 237);
 }
 @mixin contentImage($url) {
-  height: 260px;
+  height: 706px;
   background-image: $url;
-  background-position: center center;
+  background-position: top;
   background-size: cover;
   padding-top: 50px;
 }
