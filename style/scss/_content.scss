@@ -1,3 +1,4 @@
+@import "_mixins";
 .content {
   background-color: rgb(237, 237, 237);
   .content__header {
@@ -5,7 +6,7 @@
     color: rgb(99, 99, 99);
     max-width: 1200px;
     margin: 0 auto;
-    padding-bottom: 50px;
+
     .content__title {
       font-size: 55px;
       padding-top: 20px;
@@ -28,11 +29,30 @@
       font-family: "Hanken Grotesk", sans-serif;
       font-weight: 500;
     }
+    .show__more--block {
+      margin-top: 20px;
+      height: 30px;
+      padding-top: 10px;
+      .show__more {
+        height: 30px;
+        border: none;
+        font-size: 18px;
+        color: rgb(72, 72, 72);
+        font-family: "Hanken Grotesk", sans-serif;
+        font-weight: 500;
+        cursor: pointer;
+        &:hover {
+          font-size: 19px;
+          color: rgb(154, 154, 154);
+        }
+      }
+    }
   }
 }
 
 .image {
   @include contentImage(url("../../images/photo1.jpg"));
+  margin-top: 20px;
 }
 
 .content__block {
