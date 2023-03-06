@@ -63,8 +63,30 @@ listMenu();
 
 // scroll to block
 const scrollButton = document.querySelector(".show__more");
-const contentBlock = document.querySelector(".block__one--content");
+const contentBlock = document.querySelector(".content__block");
 console.log(scrollButton);
 scrollButton.addEventListener("click", function () {
   contentBlock.scrollIntoView({ behavior: "smooth" });
+});
+
+const tabs = document.querySelectorAll(".operations__tab");
+console.log(tabs);
+const tabContainer = document.querySelector(".operations__tab-container");
+const tabContents = document.querySelectorAll(".operations__content");
+
+tabContainer.addEventListener("click", function (e) {
+  const clickedButton = e.target.closest(".operations__tab");
+  console.log(clickedButton);
+  if (!clickedButton) return;
+
+  tabs.forEach((tab) => tab.classList.remove("operations__tab--active"));
+
+  clickedButton.classList.add("operations__tab--active");
+
+  tabContents.forEach((tab) =>
+    tab.classList.remove("operations__content--active")
+  );
+  document
+    .querySelector(`.operations__content--${clickedButton.dataset.tab}`)
+    .classList.add("operations__content--active");
 });

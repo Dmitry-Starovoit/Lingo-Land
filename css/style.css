@@ -133,7 +133,7 @@
   background-color: rgb(237, 237, 237);
 }
 .content__block .block__one--content {
-  display: flex;
+  text-align: center;
   color: rgb(99, 99, 99);
   max-width: 1200px;
   margin: 0 auto;
@@ -141,19 +141,83 @@
   border: none;
 }
 .content__block .block__one--content .block__one--title {
-  width: 327px;
-  height: 300px;
+  height: 40px;
   font-size: 25px;
-  padding-top: 100px;
-  padding-right: 50px;
-  text-align: center;
-  background-image: url("../../images/bg-block.svg");
-  background-repeat: no-repeat;
-  background-size: 300px;
 }
 .content__block .block__one--content .block__one--text {
   line-height: 25px;
   text-indent: 15px;
+}
+.content__block .block__two--content {
+  color: rgb(72, 72, 72);
+  text-align: center;
+  height: 400px;
+  background-image: url("../../images/photo2.jpg");
+  background-position: top;
+  background-size: cover;
+  padding-top: 50px;
+}
+.content__block .block__two--content .section__title {
+  color: rgb(72, 72, 72);
+  text-align: center;
+}
+.content__block .block__two--content .operations {
+  margin: 0 auto;
+}
+
+.operations__content {
+  width: 500px;
+  height: 150px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+.operations {
+  margin-bottom: 30px;
+}
+.operations .operations__tab {
+  margin-right: 15px;
+  margin-left: 15px;
+  transform: translateY(20%);
+  width: 130px;
+  height: 40px;
+  background-color: #ffd943;
+  border: 0px;
+  border-radius: 10px;
+  font-size: 15px;
+  color: rgb(72, 72, 72);
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 600;
+  transition: transform 0.6s;
+  cursor: pointer;
+}
+.operations .operations__tab:hover {
+  transform: scale(1.06);
+  box-shadow: 10px 10px 50px 1px rgba(0, 0, 0, 0.37);
+}
+.operations .operations__tab--active {
+  background-color: #e1bf37;
+  color: rgb(72, 72, 72);
+  transform: translateY(0%);
+}
+.operations .operations__content {
+  border-radius: 10px;
+  border: none;
+  display: none;
+  font-size: 17px;
+  background: rgb(237, 237, 237);
+}
+.operations .operations__content P {
+  font-size: 17px;
+}
+.operations .operations__content--active {
+  display: block;
+  font-size: 12px;
+  padding: 30px 30px;
+}
+.operations .operations__header {
+  padding-bottom: 20px;
+  font-size: 14px;
 }
 
 .footer {
